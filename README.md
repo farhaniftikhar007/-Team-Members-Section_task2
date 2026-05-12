@@ -1,106 +1,152 @@
-Dynamic About Page with Team Management System
-📌 Overview
+# Dynamic About Page with Team Management System
 
-This project is a full-stack web application that provides a professional About Page with dynamic team member management. It includes a frontend interface to display company and team data, and a backend API to manage that data.
+A professional full-stack web application that provides a dynamic About Page with complete team management functionality.
 
-🚀 Features
-🔹 About Section
-Company name, mission, vision, and services
-Static content (can be extended to dynamic)
-🔹 Team Members (Dynamic)
-Display team members in card layout
-Includes:
-Profile image
-Name
-Role
-Bio
-Social links
-🔹 Admin Panel (CRUD)
-➕ Add new team member
-✏️ Edit existing member
-❌ Delete member
-Real-time updates via API
-🔹 Advanced Features
-🔍 Search by name
-🎯 Filter by role
-🎨 Modern responsive UI
-🌙 Dark/Light mode toggle
-🖼 Lazy loading images
-🎬 Scroll animations
-📦 Modal popup with full profile
-🛠 Technologies Used
-Frontend
-HTML
-CSS
-JavaScript
-Backend
-Node.js
-Express.js
-Database
-JSON file (data.json)
-📁 Project Structure
+---
+
+# Features
+
+## Frontend
+- Dynamic Team Cards
+- Responsive Modern UI
+- Search Team Members
+- Filter By Role
+- Social Links (GitHub & LinkedIn)
+- Loading States
+- Smooth Animations
+
+## Backend
+- REST API Integration
+- Add Member
+- Edit Member
+- Delete Member
+- Dynamic JSON Data Storage
+- Search & Filter API
+- Error Handling
+
+## Admin Panel
+- Add New Team Members
+- Update Existing Members
+- Delete Members
+- Real-time Dynamic Updates
+
+---
+
+# Technologies Used
+
+## Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
+- JSON File Storage
+
+---
+
+# Project Structure
+
+```bash
 project/
 │
-├── backend/
+├── Backend/
 │   ├── server.js
-│   └── data.json
+│   ├── data.json
+│   ├── package.json
 │
-└── frontend/
-    ├── index.html
-    ├── index.css
-    ├── index.js
-    ├── admin.html
-    └── admin.js
-⚙️ Setup Instructions
-1. Clone or Download Project
-git clone <your-repo-link>
-2. Install Backend Dependencies
-cd backend
-npm install express cors
-3. Run Backend Server
+├── Frontend/
+│   ├── index.html
+│   ├── index.css
+│   ├── index.js
+│   ├── admin.html
+│   ├── admin.css
+│   └── admin.js
+```
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash
+git clone YOUR_GITHUB_LINK
+```
+
+---
+
+# Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+# Run Backend Server
+
+```bash
 node server.js
+```
 
-Backend will run at:
+Server will run at:
 
-http://localhost:3000
-4. Run Frontend
-cd frontend
-npx serve -l 5000
-
-Open in browser:
-
+```bash
 http://localhost:5000
-🔗 API Endpoints
-Method	Endpoint	Description
-GET	/team	Get all members
-POST	/team	Add new member
-PUT	/team/	Update member
-DELETE	/team/	Delete member
-🧪 Usage
-Admin Panel
+```
+
+---
+
+# Open Frontend
 
 Open:
 
-http://localhost:5000/admin.html
-Add / Edit / Delete team members
-Frontend Page
+```bash
+index.html
+```
 
-Open:
+Open Admin Panel:
 
-http://localhost:5000
-View team, search, filter, interact with UI
-📌 Notes
-Ensure backend runs before frontend
-Use correct API URL (http://localhost:3000/team)
-Images should be valid URLs or local paths
-🎯 Conclusion
+```bash
+admin.html
+```
 
-This project demonstrates:
+using Live Server.
 
-Full CRUD operations
-Frontend + Backend integration
-Dynamic UI rendering
-Real-world project structure
-👨‍💻 Author
+---
+
+# API Endpoints
+
+## Get Members
+
+```bash
+GET /team
+```
+
+## Add Member
+
+```bash
+POST /team
+```
+
+## Update Member
+
+```bash
+PUT /team/:id
+```
+
+## Delete Member
+
+```bash
+DELETE /team/:id
+```
+
+---
+
+# Author
 
 Farhan Iftikhar
