@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Team Admin Panel
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="admin.css"
+  >
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <div class="header">
+
+    <h1>
+      Team Admin Panel
+    </h1>
+
+    <p>
+      Manage your dynamic team members professionally.
+    </p>
+
+  </div>
+
+  <!-- FORM -->
+
+  <div class="card">
+
+    <h2 id="formTitle">
+      Add New Member
+    </h2>
+
+    <form id="form">
+
+      <div class="input-group">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Full Name"
+          required
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="text"
+          id="role"
+          placeholder="Role"
+          required
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="text"
+          id="image"
+          placeholder="Image URL"
+          required
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <textarea
+          id="bio"
+          placeholder="Short Bio"
+          required
+        ></textarea>
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="text"
+          id="github"
+          placeholder="GitHub Profile Link"
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="text"
+          id="linkedin"
+          placeholder="LinkedIn Profile Link"
+        >
+
+      </div>
+
+      <button
+        type="submit"
+        id="submitBtn"
+      >
+        Add Member
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- TEAM LIST -->
+
+  <div class="card">
+
+    <h2>
+      Team Members
+    </h2>
+
+    <div id="list"></div>
+
+  </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
